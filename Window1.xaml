@@ -1,0 +1,224 @@
+﻿<Window x:Class="WpfApp1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Система бронирования столиков" Height="680" Width="1300">
+    <Grid>
+        <Button x:Name="b_reservation" Content="Бронирования" Canvas.Left="20" Canvas.Top="35" Width="200" Height="40" Click="b_reservation_Click" FontSize="25" Foreground="#FF5E5E5E" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="900,15,0,0">
+            <Button.Template >
+                <ControlTemplate TargetType="Button" >
+                    <Border Background="LightGray" CornerRadius="15"  >
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"  Content="Бронирования" Margin="0,0,0,4"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        
+        <Button x:Name="b_exit" Content="Выйти" Canvas.Left="20" Canvas.Top="35" Width="120" Height="40" Click="Button_Click_Exit" FontSize="25" Foreground="#FF5E5E5E" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10,15,30,0">
+            <Button.Template >
+                <ControlTemplate TargetType="Button" >
+                    <Border Background="LightGray" CornerRadius="15"  >
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"  Content="Выйти" Margin="0,0,0,4"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Canvas Height="580" Width="1300" VerticalAlignment="Bottom" >
+            <Rectangle Height="585" Width="25" Canvas.Left="1265" Fill="#FF5491B4"/>
+            <Rectangle Height="150" Width="10" Canvas.Top="20" Fill="#FF5491B4"/>
+            <Rectangle Height="150" Width="10" Canvas.Top="220" Fill="#FF5491B4"/>
+            <Rectangle Height="150" Width="10" Canvas.Top="415" Fill="#FF5491B4"/>
+            <Rectangle Height="5" Width="1300" Fill="#FFCACAD4" />
+            <Rectangle Height="5" Width="1300" Fill="#FFCACAD4"  Canvas.Top="580"/>
+            <Rectangle Height="400" Width="5" Fill="#FFCACAD4" Canvas.Left="850"/>
+            <Rectangle Height="80" Width="5" Fill="#FFCACAD4" Canvas.Left="850" Canvas.Top="500"/>
+            <Button Content="1" x:Name="table_1" Canvas.Left="20" Canvas.Top="35" Width="110" Height="70" Click="Button_Click" FontSize="25" Foreground="#FF5E5E5E">
+                <Button.Template >
+                    <ControlTemplate TargetType="Button" >
+                        <Border Background="Tan" >
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"  Content="1"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button Content="2" x:Name="table_2" Canvas.Top="160" Canvas.Left="20" Width="110" Height="70" Background="Tan" Click="Button_Click"  FontSize="25" Foreground="#FF5E5E5E">
+                <Button.Template >
+                    <ControlTemplate TargetType="Button" >
+                        <Border Background="Tan"  BorderBrush="Black">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"  Content="2"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button Content="3" x:Name="table_3" Canvas.Top="280" Canvas.Left="20" Width="110" Height="110" Background="Tan" Click="Button_Click"  FontSize="25" Foreground="#FF5E5E5E">
+                <Button.Template >
+                    <ControlTemplate TargetType="Button" >
+                        <Border Background="Tan"  BorderBrush="Black">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"  Content="3"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button Content="4" x:Name="table_4" Canvas.Top="450" Canvas.Left="20" Width="200" Height="100" Background="Tan" Click="Button_Click" FontSize="25" Foreground="#FF5E5E5E">
+                <Button.Template >
+                    <ControlTemplate TargetType="Button" >
+                        <Border Background="Tan" >
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"  Content="4"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button Content ="5" x:Name="table_5" Canvas.Top="35" Canvas.Left="220" Width="100" Height="200" Background="Tan" Click="Button_Click" FontSize="25" Foreground="#FF5E5E5E">
+                <Button.Template >
+                    <ControlTemplate TargetType="Button" >
+                        <Border Background="Tan" >
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"  Content="5"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button x:Name="table_6" Content="6" Canvas.Top="285" Canvas.Left="220" Width="100" Height="100" Background="Tan" Click="Button_Click" FontSize="25" Foreground="#FF5E5E5E">
+                <Button.Template >
+                    <ControlTemplate TargetType="Button" >
+                        <Border Background="Tan"  >
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"  Content="6"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button x:Name="table_16" Content="16" Canvas.Top="220" Canvas.Left="1100" Width="140" Height="140" Background="Tan" Click="Button_Click" FontSize="25" Foreground="#FF5E5E5E">
+                <Button.Template >
+                    <ControlTemplate TargetType="Button" >
+                        <Border Background="Tan" CornerRadius="100">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"  Content="16"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button x:Name="table_15" Content="15" Canvas.Top="30" Canvas.Left="1100" Width="140" Height="140" Background="Tan" Click="Button_Click" FontSize="25" Foreground="#FF5E5E5E">
+                <Button.Template >
+                    <ControlTemplate TargetType="Button" >
+                        <Border Background="Tan" CornerRadius="100">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"  Content="15"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button x:Name="table_13" Content="13" Canvas.Top="30" Canvas.Left="880" Width="90" Height="160" Background="Tan" Click="Button_Click" FontSize="25" Foreground="#FF5E5E5E">
+                <Button.Template >
+                    <ControlTemplate TargetType="Button" >
+                        <Border Background="Tan" CornerRadius="40">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"  Content="13"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button x:Name="table_14" Content="14" Canvas.Top="240" Canvas.Left="880" Width="90" Height="160" Background="Tan" Click="Button_Click" FontSize="25" Foreground="#FF5E5E5E">
+                <Button.Template >
+                    <ControlTemplate TargetType="Button" >
+                        <Border Background="Tan" CornerRadius="40">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"  Content="14"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button Content="19" x:Name="table_19" Canvas.Top="480" Canvas.Left="900" Width="70" Height="100" Background="Tan" Click="Button_Click" FontSize="25" Foreground="#FF5E5E5E">
+                <Button.Template >
+                    <ControlTemplate TargetType="Button" >
+                        <Border Background="Tan" >
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Content="19" />
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button x:Name="table_18" Content="18" Canvas.Top="480" Canvas.Left="1030" Width="70" Height="100" Background="Tan" Click="Button_Click" FontSize="25" Foreground="#FF5E5E5E">
+                <Button.Template >
+                    <ControlTemplate TargetType="Button" >
+                        <Border Background="Tan" >
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Content="18" />
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button x:Name="table_17" Content="17" Canvas.Top="410" Canvas.Left="1160" Width="70" Height="170" Background="Tan" Click="Button_Click" FontSize="25" Foreground="#FF5E5E5E">
+                <Button.Template >
+                    <ControlTemplate TargetType="Button" >
+                        <Border Background="Tan" >
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Content="17"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button x:Name="table_10" Content="10" Canvas.Left="740" Canvas.Top="35" Width="110" Height="70" Background="Tan" Click="Button_Click" FontSize="25" Foreground="#FF5E5E5E">
+                <Button.Template >
+                    <ControlTemplate TargetType="Button" >
+                        <Border Background="Tan"  BorderBrush="Black">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"  Content="10"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button x:Name="table_11" Content="11" Canvas.Left="740" Canvas.Top="160" Width="110" Height="70" Background="Tan" Click="Button_Click" FontSize="25" Foreground="#FF5E5E5E">
+                <Button.Template >
+                    <ControlTemplate TargetType="Button" >
+                        <Border Background="Tan"  BorderBrush="Black">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"  Content="11"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button x:Name="table_12" Content="12" Canvas.Left="670" Canvas.Top="290" Width="180" Height="70" Background="Tan" Click="Button_Click" FontSize="25" Foreground="#FF5E5E5E">
+                <Button.Template >
+                    <ControlTemplate TargetType="Button" >
+                        <Border Background="Tan"  BorderBrush="Black">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"  Content="12"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button x:Name="table_7" Content="7" Canvas.Top="450" Canvas.Left="310" Width="150" Height="100" Background="Tan" Click="Button_Click" FontSize="25" Foreground="#FF5E5E5E">
+                <Button.Template >
+                    <ControlTemplate TargetType="Button" >
+                        <Border Background="Tan" >
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"  Content="7"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button x:Name="table_8" Content="8" Canvas.Top="30" Canvas.Left="410" Width="130" Height="130" Background="Tan" Click="Button_Click" FontSize="25" Foreground="#FF5E5E5E">
+                <Button.Template >
+                    <ControlTemplate TargetType="Button" >
+                        <Border Background="Tan" CornerRadius="100">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"  Content="8"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button x:Name="table_9" Content="9" Canvas.Top="210" Canvas.Left="410" Width="130" Height="130" Background="Tan" Click="Button_Click" FontSize="25" Foreground="#FF5E5E5E">
+                <Button.Template >
+                    <ControlTemplate TargetType="Button" >
+                        <Border Background="Tan" CornerRadius="100">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"  Content="9"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Rectangle Fill="LightGray" Width="320" Height="200" Canvas.Left="530" Canvas.Top="485" RadiusX="60" RadiusY="50"/>
+            <TextBlock Text="Бар" Canvas.Left="663" Canvas.Top="515" FontSize="22" Foreground="#FFF6F6F6"/>
+            <TextBlock Text="Зал" Canvas.Left="640" Canvas.Top="190" FontSize="40" Foreground="#FFE9E9E9">
+                <TextBlock.RenderTransform >
+                    <RotateTransform Angle="90"/>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock Text="Терасса" Canvas.Left="1060" Canvas.Top="160" FontSize="40" Foreground="#FFE9E9E9">
+                <TextBlock.RenderTransform >
+                    <RotateTransform Angle="90"/>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+
+        </Canvas>
+    </Grid>
+</Window>
